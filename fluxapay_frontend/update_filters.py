@@ -1,4 +1,6 @@
-import { Input } from "@/components/Input";
+import re
+
+new_content = """import { Input } from "@/components/Input";
 import { Select } from "@/components/Select";
 import { Button } from "@/components/Button";
 import { Search, Save, XCircle } from "lucide-react";
@@ -186,3 +188,7 @@ export const PaymentsFilters = memo(({
     );
 });
 PaymentsFilters.displayName = "PaymentsFilters";
+"""
+
+with open('/Users/victor/Desktop/fluxapay/fluxapay_frontend/src/features/dashboard/payments/PaymentsFilters.tsx', 'w') as f:
+    f.write(new_content)
